@@ -1,0 +1,24 @@
+<div class="contenidos index">
+	<h2><?php echo __('Contenidos'); ?></h2>
+	<?php
+	foreach ($contenidos as $contenido): ?>
+	<div class="item">
+		<h4><?php echo h($contenido['Contenido']['titulo']); ?></h4>
+		<figure><?php echo $this->Html->image($contenido['Contenido']['image_url']);?></figure>
+		<p><?php echo h($contenido['Contenido']['cuerpo']); ?></p>
+	</div>
+<?php endforeach; ?>
+	<p>
+	<?php
+	echo $this->Paginator->counter(array(
+	'format' => __('Página {:page} de {:pages}, mostrando {:current} registros de {:count}, comenzando en {:start}, finalizando en {:end}')
+	));
+	?></p>
+	<div class="paging">
+	<?php
+		echo $this->Paginator->prev('< ' . __('anterior'), array(), null, array('class' => 'prev disabled'));
+		echo $this->Paginator->numbers(array('separator' => ''));
+		echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled'));
+	?>
+	</div>
+</div>

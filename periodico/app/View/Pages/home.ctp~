@@ -1,0 +1,57 @@
+<?php $this->layout = 'home'; ?>
+<section id="block_first">
+			<div class="left">
+				<article>
+					<figure><img src="img/fotos/foto_1.jpg" alt="Foto 1"></figure>
+				</article>						
+			</div>
+			<div class="right">
+				<?php echo $this->element('noticia_principal');?>
+			</div>
+			</section>
+			<section id="block_second">
+				<div class="left_sec">
+				<?php echo $this->element('twitter');?>
+				</div>
+				<div class="middle_sec">
+					<?php echo $this->Session->flash(); ?>
+					<?php echo $this->fetch('content'); ?>
+					<article>
+						<div class="datos_article">
+							<div class="datos_left">
+								<h4>Educación</h4>
+								<p class="fecha">Martes 23 Octubre 2012 - 16 : 01</p>
+							</div>
+							<div class="datos_right">
+								<div class="addthis_toolbox addthis_default_style ">
+								<a class="addthis_button_preferred_1"></a>
+								<a class="addthis_button_preferred_2"></a>
+								<a class="addthis_button_preferred_3"></a>
+								<a class="addthis_button_preferred_4"></a>
+								<a class="addthis_button_compact"></a>
+								<a class="addthis_counter addthis_bubble_style"></a>
+								</div>
+								<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+								<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e3aca746a03b9bd"></script>
+							</div>
+						</div>
+						<div class="cls"></div>
+						<h2>Gestionan diputados recursos para escuelas indígenas</h2>
+						<figure>
+							<img src="img/fotos/foto_middle_1.gif">
+						</figure>
+						<p>
+						La Ley General de Educación no da atribuciones específicas al gobierno federal,  a los estados ni  municipios para que las escuelas cuenten con condiciones dignas para el personal docente y los alumnos, específicamente en las escuelas rurales e indígenas.  
+						</p>
+						<p>
+						Son pocos los ayuntamientos que apoyan presupuestalmente a los Centros Escolares, y se requiere etiquetar recursos específicos desde los  presupuestos de egresos estatales, a fin de que los municipios apliquen estas partidas para infraestructura y mobiliario.
+						</p>
+						<p>
+						Es por ello que los diputados federales del PRI, Josefina García Hernández y Carlos Sánchez Romero, presentaron la Iniciativa que reforma y adiciona diversas disposiciones de la Ley General de Educación, para garantizar condiciones dignas para los planteles de educación pública...
+						</p>
+					</article>
+				</div>
+				<div class="right_sec">
+					<?php echo $this->element('publicidad');?>
+				</div>
+			</section>
